@@ -1,0 +1,188 @@
+<!doctype General Inquiry>
+<General Inquiry lang="en">
+  <head>
+  <!--author: Christian O'Brien
+		date: April 28,2022-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Contact Page for Pets To Go.">
+	<meta name="keywords" content="Contact, Animal Rescue, Animal Message">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	
+	<link href="css/style1.css" rel="stylesheet" type = "text/css">
+	<style>
+
+		p {
+			font-weight: none;
+		}
+		
+		h2{
+			text-align: center;
+		}
+		
+		img{
+			text-align: center;
+		}
+	
+	</style>
+
+    <title>Pets To Go Contact Form</title>
+  </head>
+  <div class="fluid-container">
+  <body> 
+	<header>
+	
+	<div class="row">
+		<div class= "banner" id ="topPage">
+			<img src="images/pet_banner.jpg" alt="Pet Banner" >
+			<h1 class = "center-title"> Pets To Go Animal Shelter</h1>
+	
+			</div >
+		</div >	
+	</header>
+	
+	<nav >		
+		<ul >
+			<li><a  href="index.html">Homepage</a> </li>
+			<li><a  href="about.html">About PTG</a> </li>
+			<li><a  href="our_pets.html">Our Pets</a> </li>
+			<li><a  href="gallery.html">Gallery/Current Pets</a>
+			<li><a  href="contact.html">Contact Us</a>
+		</ul>
+	</nav>
+	
+	<div class ="col-md-12 bg-primary text-light">
+		<h2>Adopt A Pet and Join the Pets To Go Community!</h2>
+	</div >
+<form id="contact_form" method="post" action="contact_form_response.php">
+<div class = "container"> 	
+<div class="row">
+	<div class ="col-md-12 bg-secondary text-light">
+		<h3>Contact Us</h3>
+	</div>
+</div>
+	<fieldset>
+<div class="row">
+	<div class ="col-md-12 bg-secondary text-light">
+		<h4> Please Enter The Information Below: </h4>
+	</div>
+	<br> <br> <br>
+</div> 
+	
+	<div class="row">
+	<div class = "col-md-6 bg-secondary text-light">
+			<label for="name"> Name: </label>
+			<input id="name" name="name" type="text" value="FullName">
+		</div>
+		
+		<div class = "col-md-6 bg-secondary text-light">
+			<label for="email"> Email: </label>
+			<input id="email" name="email" type="text" value="user@example.com">
+		</div>
+		<br><br><br>
+	</div>
+		<div class="row">
+		<div class="col-md-6 bg-secondary text-light">
+		  <p style="margin-left: 110px"> Topic:</p>
+				 
+					<input type="radio" id="Career" name="topic" value="Career">
+					<label for="Career"> Career</label><br>
+					<input type="radio" id="Pet availability" name="topic" value="Pet availability">
+					<label for="Pet availability"> Pet availability</label><br>
+					<input type="radio" id="General Inquiry" name="topic" value="General Inquiry">
+					<label for="General Inquiry"> General Inquiry</label><br>
+					<input type="radio" id="Pet Health" name="topic" value="Pet Health">
+					<label for="Pet Health">Pet Health</label><br>
+					<input type="radio" id="Pet Training" name="topic" value="Pet Training">
+					<label for="Pet Training"> Pet Training</label><br>
+					<input type="radio" id="Animal Rescue" name="topic" value="Animal Rescue">
+					<label for="Animal Rescue"> Animal Rescue</label><br>
+					<input type="radio" id="Donations" name="topic" value="Donations">
+					<label for="Donations"> Donations</label><br><br>
+
+			</div>
+				
+    		
+    		 <div class="col-md-6 bg-secondary text-light">
+    		 <p style="margin-left: 85px">	Interest In :</p>
+					<input type="checkbox" id="topic1" name="topic1" value="Dogs">
+					<label for="topic1"> Dogs</label><br>
+					<input type="checkbox" id="topic2" name="topic2" value="Cats">
+					<label for="topic2"> Cats </label><br>
+					<input type="checkbox" id="topic3" name="topic3" value="samll_animals">
+					<label for="topic3"> Smaller Animals (Rabbits, Mice)</label><br>
+					<input type="checkbox" id="topic4" name="topic4" value="other">
+					<label for="topic4">Other Animals</label><br>
+					<br><br>
+				</div>	
+			 </div>
+			 
+			 <div class="row">
+			 
+			 <div class="col-md-6 bg-secondary text-light">
+			 <label for="comments">	Questions/Messages:</label>
+			<textarea id="comments" name="comments" rows="5" cols="30" style="margin-left: 200px">
+			</textarea>
+			</div>
+			<br><br>
+			 
+			 <div class="col-md-6 bg-secondary text-light">
+			 <label for="topic">Location: </label>
+     			<select id="topic" name="location" style="font-size:0.9em;">
+       				<option value="Springfield (IL)">Springfield (IL)</option>
+        			<option value="Chicago (IL)">Chicago (IL)</option>
+        			<option value="Other In-State Region (IL)">Other In-State Region (IL)</option>
+       				<option value="Out of State">Out of State</option>
+				
+      			</select>
+      			
+    		</div>
+			
+			</div>	
+
+		
+		<div class="row">
+		<div class="col-md-12 bg-secondary text-light">
+			<div class="flex-buttons">
+			<input  type="submit" id="button" name="button" value="Submit">
+			<input  type="reset" id="button" name="button" value="Reset">
+		</div>
+		</div>
+		</div>
+</fieldset>
+
+	
+	</form>
+	</div>
+		<div class="row">
+		<div class="col-md-6 bg-primary text-light">
+			<center><img src="images/cats3.jpg" alt="Three Cats" width = "300" ></center>
+		
+		</div>
+		
+		<div class="col-md-6 bg-primary text-light">
+			<center><img src="images/dogs.jpg" alt="Three Dogs" ></center>
+		
+		</div>
+			
+		
+       </div>
+     <footer>
+	 <p>&trade; Trademark 2022 All rights reserved. Animal Humane Society</p>
+
+		<a href="https://www.animalhumanesociety.org">
+			<center><img src="images/cat_footer.jpg" alt="Logo"  style="border:0;width:200px;height:200px:"></center>
+		</a>
+		<p style="font-size: x-large;"><a href="#topPage">Back to top </a></p>
+	</footer>
+	
+    
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  
+  </body>
