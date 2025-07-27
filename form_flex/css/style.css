@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: 0 auto;
+	padding: 0.5em;
+	font-family: Ariel, Helvetica, sans-serif;
+	background-color: #99ccff;
+	border:2px solid black;
+	border-radius: 15px;
+	
+}
+
+
+
+
+select, option, input, label, button{
+            padding: 0.2rem 1rem;
+            font-size: 1.2rem;
+            color: inherit;
+        }
+.form-box{
+            padding: 0.5rem 0;
+            display: flex;
+            flex-direction: column;
+			justify-content: space-around;
+			
+}
+
+ .form-box label{
+    display: flex;
+	text-align: right;		
+ }
+ 
+.form-box input,
+.form-box select,
+.form-box textarea{
+	flex-basis: 70%;
+}
+
+ .flex-buttons{
+	display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .row{
+	  flex-direction: column;
+  }
+  
+  .flex-container{
+	  width: 100%;
+	  margin: 0;
+  }
+}
+
+
+        
+@media all and (min-width: 600px){
+	
+.form-box{
+	flex-direction: row;
+}
+.form-box label{
+    flex-basis: 9rem;
+                flex-grow: 0;
+                flex-shrink: 0;
+}
+            .form-box input,
+			.form-box select,
+			.form-box textarea,
+			 .form-box button{
+                flex-basis: 0;
+                flex-grow: 1;
+                flex-shrink: 1;
+}
+
+            .form-box button{
+                margin-left: 9rem;
+            }
+        }
